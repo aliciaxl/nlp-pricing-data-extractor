@@ -140,7 +140,7 @@ export default function Home() {
 
         {results && (
           <div className="mt-8 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
-            <h2 className="text-lg font-semibold text-gray-900 mb-6 border-b border-gray-100 pb-3">
+            <h2 className="text-lg font-semibold text-gray-600 mb-6 border-b border-gray-100 pb-3">
               Extracted Totals
             </h2>
             
@@ -184,10 +184,10 @@ export default function Home() {
 
               <div className="col-span-2 mt-1 bg-blue-50 rounded-lg px-3 py-3 -mx-3">
   <div className="grid grid-cols-2 gap-x-8">
-    <div className="text-sm font-bold text-gray-900">
+    <div className="text-sm font-semibold text-gray-600">
       Total Quote
     </div>
-    <div className="text-sm font-black text-gray-900 font-mono text-right">
+    <div className="text-sm font-semibold text-gray-900 font-mono text-right">
       {results.totalQuote !== null
         ? `$${results.totalQuote.toLocaleString()}`
         : "—"}
