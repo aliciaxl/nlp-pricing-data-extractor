@@ -1,3 +1,32 @@
+# NLP Financial Data Extractor
+
+This project uses OpenAI's GPT-5 to extract structured financial data from uploaded documents, pasted emails, and linked content. Built with Next.js API Routes, Supabase, and customized prompts to enable automated parsing of financial quote proposals.
+
+## Demo
+![Hotel Quote Result](./result.png)
+
+
+- **AI-Powered Parsing**: Uses OpenAI GPT-5 with structured prompts to extract financial data as JSON.
+- **Multi-format File Support**: Accepts PDFs, HTML, and plain text files up to 10MB.
+- **Link Content Scraping**: Fetches and extracts content from embedded URLs in emails or file attachments.
+- **Context-Aware Extraction**: Handles "complimentary", "minimum", and "included" conditions with intelligent logic.
+- **Supabase Integration**: Stores extracted data, confidence scores, and logs.
+
+## Supported Inputs
+
+- Plain text (pasted)
+- Uploaded file (PDF, HTML)
+- Linked content (fetched and parsed)
+
+### Extra Showcase
+
+<table width="100%">
+  <tr>
+    <td align="center" width="50%"><img src="./fileInput.png" alt="File Input" style="max-width: 100%; height: auto;" /></td>
+    <td align="center" width="50%"><img src="./textInput.png" alt="Text Input" style="max-width: 100%; height: auto;" /></td>
+  </tr>
+</table>
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
